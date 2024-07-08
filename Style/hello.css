@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* This might not be necessary */
+    width: 70%;
+    margin: auto;
+    padding-top: 120px;
+    
+}
+.imgdesc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desc{
+    margin: 10px 20px;
+}
+.img{
+    width: 400px;
+}
+
+

@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #f8f9fa;
+    background-image: url('bg.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; 
+}
+h1{
+    margin: 80px 0 40px;
+    text-align: center;
+}
+/* Dashboard container */
+.dash {
+    
+    padding: 20px;
+}
+.para p{
+    padding-top: 76px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-weight: 90;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 260px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card container */
+.card .container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Icon styles */
+.icon {
+    color: #007bff;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 90%;
+    
+}
+.dash .container{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+.card .container i{
+    display: block;
+}
+
+
+/* Number styles */
+.number {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* Title styles */
+h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Manage link styles */
+.manage a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.manage a:hover {
+    color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dash {
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+

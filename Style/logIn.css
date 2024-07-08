@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added to ensure padding and border are included in the element's total width and height */
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+:root{
+    --main-blue: rgba(23, 189, 186);
+    --second-blue: rgba(13, 92, 156);
+}
+a{
+    text-decoration: none;
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('ensa.jpg'); /* Adjusted the linear gradient syntax */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main .container{
+    backdrop-filter: blur(11px); /* Apply the blur effect */
+    width: 350px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-47%,-50%);
+    text-align: center;
+    padding: 30px 10px;
+    border: 1px solid rgba(49, 10, 10, 0.993);
+    border-radius: 8px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 30px;
+}
+.emaill  , .passwordd {
+    outline: none;
+    width: 100%;
+    border: 1px solid #fff;
+    background: transparent;
+    width: 290px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 15px;
+}
+input::placeholder {
+    color: white; /* Change placeholder color to gray (#999) */
+  }
+.logInn{
+    outline: none;
+    border: 1px solid rgb(255, 62, 3);
+    width: 50%;
+    padding: 8px 18px;
+    background-color: rgb(255, 1, 1);
+    color: white;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logInn:hover{
+    background-color: rgb(224, 3, 3);
+}

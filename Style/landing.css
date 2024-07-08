@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added to ensure padding and border are included in the element's total width and height */
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --main-blue: rgba(23, 189, 186);
+    --second-blue: rgba(13, 92, 156);
+}
+a{
+    text-decoration: none;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(23, 189, 186, 0.7), rgba(13, 92, 156, 0.7)), url('ensa.jpg'); /* Adjusted the linear gradient syntax */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+.header img{
+    height: 90px;
+}
+
+.header .contactus{
+    padding: 5px 10px;
+    background-color: white;
+    font-size: 20px;
+    color: rgba(23, 189, 186, 0.7);
+    border-radius: 20px;
+    width: 100px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.header .contactus:hover{
+    background-color: rgb(255, 60, 60);
+    color: white;
+}
+.text-box{
+    width: 70%;
+    margin-top: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 40px 0 50px;
+    font-size: 20px;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    color: white;
+    border: 1px solid #fff;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    width: 18%;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.btn:hover{
+    border-color: rgb(255, 60, 60);
+    background-color: rgb(255, 60, 60);
+}

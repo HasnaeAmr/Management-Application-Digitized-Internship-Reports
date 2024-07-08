@@ -1,0 +1,13 @@
+.container{
+    width: 60%;
+    margin: auto;
+    padding: 5px 30px;
+}
+.hello{
+    text-align: center;
+    background-color: #eee;
+    border-radius: 10px;
+}
+#level{
+    display: none;
+}

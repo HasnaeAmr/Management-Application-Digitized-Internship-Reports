@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --main-blue: rgba(23, 189, 186);
+    --second-blue: rgba(13, 92, 156);
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #f0f0f0;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 60px;
+    padding: 0 20px;
+}
+
+.landing{
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 0 0 15px 15px;
+    margin: 0 20px 20px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    background-color: #d4e1ff;
+}
+
+.landing h1{
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 600;
+}
+
+.name{
+    color: var(--main-blue);
+}
+
+.landing .search-by{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.search .search-by{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.oper{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.cardy{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px 20px;
+    background-color: #fff;
+}
+
+.cardy .title h5{
+    color: #333;
+    font-size: 18px;
+}
+
+.cardy .view {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: white;
+    background-image: url("ppdf.png");
+    background-size: contain; /* Resize the background image to fit within the container */
+    background-position: center;
+    background-repeat: no-repeat; /* Adjust the values as needed */
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+
+
+.daty{
+    font-size: 12px;
+    color: rgb(39, 39, 39);
+}
+
+.infos a{
+    display: block;
+}
+
+.infos{
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+}
+
+.infos a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+.infos .down, .del, .update{
+    font-size: 17px;
+    padding: 3px;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    transition: 0.5s;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardy::after{
+    content: '';
+    border: 20px solid #666;
+    border-color: rgb(61, 61, 61) transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px;
+}
+
+.cardy:hover .infos .down{
+    display: block;
+}
+
+.cardy:hover .view::after{
+    content: 'View report';
+    color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(201, 201, 201, 0.644);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cardy .down:hover{
+    background-color: var(--main-blue);
+    color: white;
+}
+.filter {
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.sector-choice {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.filter input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter input[type="submit"]:hover {
+    background-color: #218838;
+}
